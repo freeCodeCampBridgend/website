@@ -1,0 +1,40 @@
+nav ul {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: green;
+    font-family: Verdana, Geneva, sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; 
+}
+
+h1 a,
+h2 a{
+    color: black;
+}
+
+#page {
+    margin: auto;
+    width: 80%;
+    border: 3px dashed green;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.6)
+}
+
+footer {
+    overflow: auto;
+}
