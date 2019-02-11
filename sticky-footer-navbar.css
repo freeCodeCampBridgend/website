@@ -1,0 +1,17 @@
+main > .container {
+    padding: 60px 15px 0;
+  }
+  
+  .footer {
+    background-color: #343a40;
+  }
+  
+  .footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    color: white;
+  }
+  
+  code {
+    font-size: 80%;
+  }
