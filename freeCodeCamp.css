@@ -17,3 +17,13 @@ h2 a{
     width: 100%;
     height: auto;
 }
+
+main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#container {
+    margin: auto;
+    width: 80%;
+}

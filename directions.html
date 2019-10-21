@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>freeCodeCamp bridgend</title>
-    <link rel="stylesheet" href="directions.css">
+    <link rel="stylesheet" href="freeCodeCamp.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">    
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="57x57" href="/logos/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/logos/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/logos/apple-icon-72x72.png">
@@ -24,19 +26,33 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 
-<body>
-    <div id="page">
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html#page">Home</a> |</li>
-                    <li><a href="index.html#join">Join Us</a> |</li>
-                    <li><a href="directions.html">Directions</a></li>
+<body class="d-flex flex-column h-100">
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">freeCodeCamp</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html#page">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#join">Join</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="directions.html">Directions</a>
+                    </li>
                 </ul>
-            </nav>
-            <h1><a href="https://freeCodeCamp.org">freeCodeCamp</a> Bridgend</h1>
-            <h2>How to find us</h2>
-        </header>
+            </div>
+        </nav>
+    </header>
+    <div id="container">
+        <h2>How to find us</h2>
         <main>
             <p>We meet at two locations join the facebook group to find out which we are at this week</p>
             <div class="gmap_canvas">
@@ -51,17 +67,18 @@
                     src="https://maps.google.com/maps?q=Starbucks%20Coffee%20Waterton%20Bridgend&t=&z=15&ie=UTF8&iwloc=&output=embed"
                     frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
             </div>
-
         </main>
-        <footer>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#page">Top</a></li>
-                </ul>
-            </nav>
-        </footer>
     </div>
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <h2 id="join">Join Us</h2>
+            <p>
+                We meet every Monday between 18:30 and 20:30 in one of two locations join <a href="https://www.facebook.com/groups/free.code.camp.bridgend/?ref=br_rs">our
+                    facebook group</a> to find out where the next meeting is.
+
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>
